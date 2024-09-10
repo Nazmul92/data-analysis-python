@@ -1,4 +1,4 @@
-# Blinkit Grocery Data Analysis and Dashboard
+# End-to-End Blinkit Grocery Data Analysis and Dashboard
 
 This project focuses on analyzing sales data from **Blinkit Grocery** using Python for data analysis and **Power BI** for data visualization. The aim is to uncover key trends and insights from the sales data and provide an interactive dashboard for exploration and decision-making.
 
