@@ -1,6 +1,6 @@
 # Blinkit Grocery Analytics: From Data to Dashboard
 
-This project focuses on analyzing sales data from **Blinkit Grocery** using Python for data analysis and **Power BI** for data visualization. The aim is to uncover key trends and insights from the sales data and provide an interactive dashboard for exploration and decision-making.
+This project focuses on analyzing sales data from **Blinkit Grocery** using Python for data analysis and statistical test (t-test, ANOVA, chi-square test), and **Power BI** for data visualization. The aim is to uncover key trends and insights from the sales data and provide an interactive dashboard for exploration and decision-making.
 
 ## Project Overview
 This project involves:
@@ -22,11 +22,29 @@ The following steps were conducted during the analysis:
 - Performed **correlation analysis** to find relationships between different variables.
 - Conducted descriptive statistics to understand the distribution of sales and item types.
 
-### 3. Regression Analysis
+### 3. Hypothesis Testing and Statistical Analysis
+3.1. T-test (Low-Fat vs. Regular-Fat Sales)
+- t_statistic: -0.514
+- p_value: 0.607
+- Interpretation: There is no statistically significant difference between the sales of low-fat and regular-fat items, as the p-value is greater than 0.05.
+
+3.2. ANOVA (Sales by Item Type)
+- F-statistic: 7.16
+- p_value: 6.514e-16
+- Interpretation: The low p-value indicates that there is a significant difference in sales between different item types.
+
+3.3. Chi-square Test (Outlet Location Type vs. Outlet Type)
+- Chi-square statistic: 4725.61
+- p_value: 0.0
+- Degrees of Freedom: 6
+- Interpretation: The test shows a statistically significant relationship between outlet location type and outlet type, indicating that these two variables are dependent on each other.
+
+
+### 4. Regression Analysis
 - Applied a **linear regression model** to predict sales based on independent variables such as `Item Weight`, `Outlet Type`, and `Item Visibility`.
 - Evaluated model performance using metrics like **R-squared** and **Mean Squared Error (MSE)**.
 
-### 4. Power BI Dashboard Design
+### 5. Power BI Dashboard Design
 - Designed an interactive **Power BI dashboard** to present the findings and insights from the analysis.
 - Visualizations include:
   - **Total Sales by Outlet Type**
